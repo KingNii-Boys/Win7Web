@@ -1,0 +1,126 @@
+ p{
+				font-size: 25px;
+				color: white;
+			}
+			div{
+				font-size: 25px;
+				color: #ffffff;
+				background: #000000;
+			}
+			body{
+				background: Black;
+				margin: 0px;
+			}
+			#SW{
+				margin-top: 50px;
+			}
+			.Lel{
+				display: block;
+				margin-top: 100px;
+  				margin-left: auto;
+  				margin-right: auto;
+  				width: 300px;
+			}
+			.SW{
+				text-align: center;
+			}
+			.WN{
+				margin-top:16%;
+				font-size: 15px;
+				color:darkgrey;
+			}
+
+			#WinPage{
+				position: fixed;
+				justify-content: middle;
+				margin: 0;
+				padding: -5px;
+				right: 0px;
+				top: px;
+				align-items: start;
+				z-index: 20;
+			}
+
+			#bg{
+				text-align: center;
+				display: block;
+				padding: 0;
+  				margin-left: auto;
+  				margin-right: auto;
+				top: 100px;
+  				width: 100%;
+			}
+
+			#tb{
+				position: absolute;
+				opacity: .85;
+				height: 50px;
+				width: 100%;
+				background-color: #ffffff;
+				z-index:20;
+  				bottom: 0px;
+				display: flex;
+			}
+
+			#chromeSI{
+				height: 40px;
+				padding-top: 2px;
+				
+				
+			}
+			#windowsSI{
+				height: 40px;
+				padding-top: 2px;
+				
+				
+			}
+			#fiSI{
+				height: 40px;
+				padding-top: 2px;
+				
+				
+			}
+			#WmpSI{
+				height: 40px;
+				padding-top: 2px;
+				
+				
+			}
+			.csi:hover{
+				opacity: .75;
+				transition: 1.5s;
+				opacity:1;
+			}
+
+			button.csi{
+				border: none;
+				opacity:.2;
+				opacity: 0.45;
+				position:relative;
+				z-index: 1;
+			}
+
+			.cs{
+				height: 40px;
+				padding-top: 5px;
+			}
+
+			  .searchnab{
+				  height:100%;
+				  width: 160px;
+				  align-content: center;
+				  text-align: center;
+				  border: none;
+			  }
+			  .searchnab:focus{
+   				outline: none;
+   				border: none;
+				}
+				#startm{
+					position: fixed;
+					top: 8.2%;
+					height: 85%;
+					width: 52%;
+					background: white;
+					z-index: 1;
+				}
