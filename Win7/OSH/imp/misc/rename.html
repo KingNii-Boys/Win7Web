@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows-Like Interface</title>
+    <style>
+        /* General Body and Layout */
+        body {
+            background: black;
+            margin: 0;
+        }
+        div {
+            font-size: 25px;
+            color: #ffffff;
+            background: #000000;
+        }
+
+        /* #WinPage styles */
+        #WinPage {
+            position: fixed;
+            justify-content: middle;
+            margin: 0;
+            padding: -5px;
+            right: 0px;
+            top: 0px;  /* Fixed top position */
+            align-items: start;
+        }
+
+        #bg {
+            text-align: center;
+            display: block;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 100px;
+            width: 100%;
+        }
+
+        /* Taskbar styles */
+        #tb {
+            position: absolute;
+            opacity: .85;
+            height: 50px;
+            width: 100%;
+            background-color: #ffffff;
+            z-index: 20;
+            bottom: 0px;
+            display: flex;
+        }
+
+        /* Navbar Button styles */
+        button.csi {
+            border: none;
+            opacity: 0.45;  /* Default opacity of the button */
+            position: relative;
+            z-index: 1;
+            transition: opacity 0.3s ease;  /* Smooth transition */
+        }
+
+        button.csi:hover {
+            opacity: 0.75;  /* On hover, button opacity increases */
+        }
+
+        /* Ensure the image inside the button does not change opacity */
+        button.csi img {
+            opacity: 1;  /* Default opacity of the image */
+            transition: opacity 0.3s ease;  /* Optional smooth transition */
+        }
+
+        button.csi:hover img {
+            opacity: 1;  /* Keep image opacity the same when button is hovered */
+        }
+
+        /* Image size and button arrangement */
+        .csi img {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* .searchnab for search input in taskbar */
+        .searchnab {
+            height: 100%;
+            width: 160px;
+            align-content: center;
+            text-align: center;
+            border: none;
+        }
+
+        .searchnab:focus {
+            outline: none;
+            border: none;
+        }
+
+        /* Additional Layout Classes */
+        .SW {
+            text-align: center;
+        }
+        
+        .WN {
+            margin-top: 16%;
+            font-size: 15px;
+            color: darkgrey;
+        }
+
+        .Lel {
+            display: block;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="WindowsHomepage" id="WinPage" hidden>
+        <img id="bg" src="OSH/Backgrounds/default.jpg" alt="Background">
+        <div class="taskbar" id="tb">
+            <!-- Windows Button -->
+            <button id="csiB" class="csi cs">
+                <img id="windowsSI" src="OSH/Icons/windows.png" alt="Windows">
+            </button>
+
+            <!-- Internet Explorer Button -->
+            <button id="ieB" class="csi cs">
+                <img id="chromeSI" src="OSH/Icons/ie.png" alt="Internet Explorer">
+            </button>
+
+            <!-- File Explorer Button -->
+            <button id="fEB" class="csi cs">
+                <img id="fileExplorerSI" src="OSH/Icons/fileExplorer.png" alt="File Explorer">
+            </button>
+
+            <!-- Windows Media Player Button -->
+            <button id="WmpB" class="csi cs">
+                <img id="WmpSI" src="OSH/Icons/Wmp.png" alt="Windows Media Player">
+            </button>
+        </div>
+    </div>
+
+    <!-- Optionally, you can add JavaScript to toggle visibility or add interactivity -->
+    <script>
+        // Example to show WinPage when needed
+        // You can toggle the visibility of #WinPage using JS like so:
+        document.getElementById("WinPage").hidden = false; // To make WinPage visible
+    </script>
+</body>
+</html>
